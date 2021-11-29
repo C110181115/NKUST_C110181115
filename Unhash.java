@@ -12,11 +12,12 @@ class UnHash{
         String newResult="";
 
         while(hash != 7){
-            hash = hash/ 23;
             result = result + letters.charAt((int) (hash % 23));
+            hash = hash/ 23;
         }
-        for (int i = result.length();i<=0; i--){
-            newResult += result.charAt(i);
+
+        for (int i = result.length(); i>=1; i--){
+            newResult += result.charAt(i-1);
         }
         return newResult;
     }
