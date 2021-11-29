@@ -1,0 +1,31 @@
+class UnHash{
+
+    public static void main (String[] args) {
+        System.out.println(revHash(6933552791181934L));
+        System.out.println(hash("justdoit")); //574318821802
+    }
+
+    public static String letters = "cdefghijlmnoqstuvxz";
+
+    public static String revHash(long hash) {
+        String result="";
+        String newResult="";
+
+        while(hash != 7){
+            hash = hash/ 23;
+            result = result + letters.charAt((int) (hash % 23));
+        }
+        for (int i = result.length();i<=0; i--){
+            newResult += result.charAt(i);
+        }
+        return newResult;
+    }
+
+    public static long hash(String s){
+        long h = 7;
+        for (int i = 0; i < s.length(); i++){
+            h = h * 23 + letters.indexOf(s.charAt(i));
+        }
+        return h;
+    }
+}
