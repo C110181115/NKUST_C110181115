@@ -17,7 +17,7 @@ public class spider {
             for (Element headline : newsHeadlines) {
                 System.out.println(headline.text());
                 break;
-            }    //QQ
+            }    
         }catch (Exception e){
             System.out.println(e);
         }
