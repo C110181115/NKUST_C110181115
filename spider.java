@@ -20,6 +20,10 @@ public class spider {
             }    
         }catch (Exception e){
             System.out.println(e);
+<<<<<<< HEAD
         }//0
+=======
+        }//ccllllllllllllllloudg
+>>>>>>> f5f5c99f5fcc22758252bfbd9d9512745b9e30ad
     }
 }
