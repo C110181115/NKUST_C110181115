@@ -19,7 +19,7 @@ public class main {
 
         warrior.show();
         warrior.skill("攻擊");
-        warrior.skill("詠唱","劈砍");
+        warrior.skill("蓄力","劈砍");
         warrior.wear("巨斧");
         System.out.println();
 
