@@ -31,7 +31,7 @@ public class main {
         magician.show();
         magician.skill("攻擊");
         magician.skill("詠唱","治癒術");
-        magician.wear("起源之仗");
+        magician.wear("法業障");
         System.out.println();
     }
 }
