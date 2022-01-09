@@ -18,6 +18,20 @@ public class final_work {
                     break;
                 }
             }
+
             System.out.println(index_2.title());
+
+            Elements headline2 = index_2.select("div #LISTED_STOCK li div a");
+
+            for (Element x : headline2)
+            {
+                if (Objects.equals(x.text(),"半導體"))
+                {
+                    URL_3 = URL_1+x.attr("href");
+                    System.out.println(URL_1+x.attr("href"));
+                    index_3=Jsoup.connect(URL_3).get();
+                    break;
+                }
+            }
     }
 }
