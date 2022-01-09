@@ -95,4 +95,4 @@ public class YAHOO {
         String pattern = "%-" + length + "s";
         return String.format(pattern, str).replace(' ', padChar);
     }
-}
+}//test
